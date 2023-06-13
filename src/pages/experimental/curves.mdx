@@ -1,0 +1,84 @@
+---
+title: Caracterização por curvas IxV
+---
+
+Após a fabricação das células solares, é necessário caracterizá-las a fim de analisar os resultados obtidos com elas,
+determinando sua eficiência e possibilitando determinar como poderão ser aplicadas. Para isso, as células foram
+submetidas à uma fonte de luz com potência de 1000 W/m², após isso, primeiro é determinado a corrente máxima (Isc) da
+célula através de um circuito fechado e um multímetro, depois a voltagem máxima (Voc) usando um circuito aberto.
+Possuindo esses dois valores, é alterado gradualmente o valor da resistência do circuito por meio de um potenciômetro,
+para assim encontrar a curva que relaciona a tensão e a corrente, variando do ponto onde a corrente é máxima até o ponto
+onde a tensão é máxima.
+
+Para as cinco células fabricadas, foram obtidas as seguintes curvas de corrente por tensão (I x V):
+
+![IxV Celula 1](/plots/i_v_1.png)
+![IxV Celula 2](/plots/i_v_2.png)
+![IxV Celula 3](/plots/i_v_3.png)
+![IxV Celula 4](/plots/i_v_4.png)
+![IxV Celula 5](/plots/i_v_5.png)
+
+Com os valores de corrente e tensão encontrados, é calculado a potência da célula através do produto desses dois valores
+para determinada resistência do circuito, obtendo-se dessa forma os seguintes gráficos de potência x tensão para as
+células:
+
+![Pot x V Celula 1](/plots/p_v_1.png)
+![Pot x V Celula 2](/plots/p_v_2.png)
+![Pot x V Celula 3](/plots/p_v_3.png)
+![Pot x V Celula 4](/plots/p_v_4.png)
+![Pot x V Celula 5](/plots/p_v_5.png)
+
+A partir das curvas de potência, é possível encontrar a potência máxima de funcionamento de cada célula (Pmax), assim
+como a corrente (Imp) e a tensão (Vmp) relativas a essa potência. Com esses valores e considerando a área da célula
+solar como 1 cm2, podemos calcular a eficiência (η) de cada célula através da fórmula:
+
+$η(\%) = \frac{{(I_{mp} \times V_{mp}) / A_{cell}}}{{P_{light}}} \times 100$
+
+Além da eficiência, também é calculado o Fator de Preenchimento (FF), que é a relação entre a potência máxima fornecida
+pela célula solar e o produto da corrente de curto-circuito e a tensão de circuito aberto. O fator de preenchimento é
+uma medida da eficiência de utilização da área da célula e varia de 0 a 1. Quanto mais próximo de 1, melhor é o
+desempenho da célula.
+
+$FF(\%) = \frac{{(I_{mp} \times V_{mp})}}{{(I_{sc} \times V_{oc})}} \times 100$
+
+Dessa maneira, foram obtidos os seguintes valores para cada uma das 5 células fabricadas:
+
+|         | Célula 1 | Célula 2 | Célula 3 | Célula 4 | Célula 5 |
+|---------|----------|----------|----------|----------|----------|
+| Isc (mA)| 10,5     | 8,16     | 7        | 11,8     | 14,3     |
+| Voc (V) | 0,57     | 0,64     | 0,57     | 0,63     | 0,62     |
+| Imp (mA)| 8,36     | 6,54     | 4,81     | 8,57     | 11,01    |
+| Vmp (V) | 0,41     | 0,40     | 0,35     | 0,41     | 0,36     |
+| Pmax (mW)| 3,4276  | 2,616    | 1,6835   | 3,5137   | 3,9636   |
+| FF (%)  | 18,60697143 | 20,51764706 | 13,7085 | 18,75958475 | 17,18483916 |
+| η (%)   | 3,4276   | 2,616    | 1,6835   | 3,5137   | 3,9636   |
+
+Por fim, foram caracterizadas também mais 11 células previamente fabricadas, que serão utilizadas para complementar uma
+aplicação das células solares em um projeto real. Para elas, foram medidos apenas os valores de corrente e tensão
+máximas, e para o cálculo da potência máxima, foi usado como base um fator de preenchimento de 43,07%, que foi fornecido
+através da média dos valores das células. Dessa maneira, foram obtidos os seguintes resultados:
+
+| Célula | Máximo V - Voc | Mínimo V | Máximo I - Isc (mA) | Mínimo I (mA) | Pmax (mW) |
+|--------|----------------|----------|---------------------|----------------|------------|
+| 1      | 0,64           | 0,08     | 6,85                | 0              | 1,888      |
+| 2      | 0,74           | 0,05     | 4,37                | 0              | 1,393      |
+| 3      | 0,66           | 0,1      | 8,5                 | 0              | 2,416      |
+| 4      | 0,68           | 0,11     | 9,1                 | 0              | 2,665      |
+| 5      | 0,69           | 0,15     | 12,05               | 0              | 3,581      |
+| 6      | 0,69           | 0,12     | 10,16               | 0              | 3,019      |
+| 7      | 0,68           | 0,11     | 9,21                | 0              | 2,697      |
+| 8      | 0,65           | 0,09     | 7,64                | 0              | 2,139      |
+| 9      | 0,65           | 0,08     | 6,85                | 0              | 1,918      |
+| 10     | 0,66           | 0,08     | 6,92                | 0              | 1,967      |
+| 11     | 0,63           | 0,08     | 6,34                | 0              | 1,720      |
+
+
+Após a fabricação das células solares, é necessário caracterizá-las a fim de analisar os resultados obtidos com elas,
+determinando sua eficiência e possibilitando determinar como poderão ser aplicadas. Para isso, as células foram
+submetidas à uma fonte de luz com potência de 1000 W/m², após isso, primeiro é determinado a corrente máxima (Isc) da
+célula através de um circuito fechado e um multímetro, depois a voltagem máxima (Voc) usando um circuito aberto.
+Possuindo esses dois valores, é alterado gradualmente o valor da resistência do circuito por meio de um potenciômetro,
+para assim encontrar a curva que relaciona a tensão e a corrente, variando do ponto onde a corrente é máxima até o ponto
+onde a tensão é máxima.
+
+Para as cinco células fabricadas, foram obtidas as seguintes curvas de corrente por tensão (I x V):
