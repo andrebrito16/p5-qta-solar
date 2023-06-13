@@ -2,6 +2,9 @@
   "index": {
     "title": "Introdução"
   },
+  "details": {
+    "title": "Detalhe das células solares DSSC"
+  },
   "experimental": {
     "title": "Experimental e discussão de resultados"
   }
